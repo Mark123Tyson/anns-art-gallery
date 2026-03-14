@@ -147,6 +147,14 @@ const Footer = () => {
       </style>
       <div className="footer-content">
         <p>&copy; 2024 Artisan Fusion. All Rights Reserved.</p>
+   <a 
+          href="https://marktyson.netlify.app/"
+          target="_blank" 
+          rel="noopener noreferrer"
+          style={styles.devLink}
+        >
+          Built by <span className="dev-name-span" style={styles.devName}>MARK TYSON</span>
+        </a>
         <p>
           <a href="/privacy-policy">Privacy Policy</a> |{" "}
           <a href="/terms-of-service">Terms of Service</a>
