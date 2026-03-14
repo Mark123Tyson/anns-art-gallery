@@ -10,7 +10,7 @@ import FavoritedProducts from './pages/FavoritedProducts';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import './App.css';
-import Layout from './layoutComponents/Layout'; 
+import Layout from './layoutComponents/Layout';
 import initialProducts from './variables/products';
 import categories from './variables/categories';
 
