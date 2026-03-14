@@ -13,7 +13,181 @@ const Footer = () => {
             <i className="fab fa-instagram"></i>
           </a>
           <a href="https://www.facebook.com/profile.php?id=100009295961399" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <i className="fab fa-facebook"></i>import React from 'react';
+
+const Footer = () => {
+
+  const styles = {
+    devLink: {
+      fontSize: "11px",
+      color: "#94a3b8",
+      textDecoration: "none",
+      letterSpacing: "1px",
+      textTransform: "uppercase",
+      display: "inline-block"
+    },
+    devName: {
+      color: "#d4af37",
+      fontWeight: "bold",
+      marginLeft: "5px",
+      transition: "all 0.3s ease",
+      display: "inline-block"
+    }
+  };
+
+  return (
+    <footer className="footer">
+      <section className='socials'>
+        <h2 className='find'>Find Us On:</h2>
+        <div className="social-icons">
+          <a href="https://wa.me/256775469680" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <i className="fab fa-whatsapp"></i>
+          </a>
+          <a href="https://www.instagram.com/annesther31/?igsh=YjM5aW8wMTNkbWd0" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i className="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100009295961399" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
             <i className="fab fa-facebook"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <i className="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <i className="fab fa-tiktok"></i>
+          </a>
+          <a href="https://www.snapchat.com" target="_blank" rel="noopener noreferrer" aria-label="Snapchat">
+            <i className="fab fa-snapchat-ghost"></i>
+          </a>
+        </div>
+      </section>
+
+      <style>
+        {`
+          .footer {
+            font-size: 20px;
+            background-color: #4f5258;
+            color: white;
+            text-align: center;
+            width: 100%;
+            position: relative;
+            bottom: 0;
+            left: 0;
+            padding-top:20px;
+          }
+
+          .footer a {
+            color: #61dafb;
+            text-decoration: none;
+          }
+
+          .footer a:hover {
+            color: #ffffff;
+          }
+
+          h2.find {
+            font-size: 35px;
+          }
+
+          .socials {
+            display: flex;            
+            flex-direction: column;
+            justify-content: center;  
+            align-items: center;     
+            flex-wrap: nowrap;
+            border-radius: 10px;
+          }
+
+          .social-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .social-icons a {
+            font-size: 40px;
+            padding: 10px;
+            transition: transform 0.3s;
+          }
+
+          .social-icons a:hover {
+            border-radius: 40%;
+            transform: scale(1.1);
+            background-color: whitesmoke;
+          }
+
+          .fab.fa-whatsapp { color: #25D366; }
+          .fab.fa-instagram { color: #C13584; }
+          .fab.fa-facebook { color: #1877F2; }
+          .fab.fa-twitter { color: #1DA1F2; }
+          .fab.fa-tiktok { color: #69C9D0; }
+          .fab.fa-snapchat-ghost { color: #FFFC00; }
+
+          @media (max-width: 768px) {
+            .footer {
+              padding: 15px 0;
+            }
+
+            .footer-content p {
+              font-size: 0.9rem;
+            }
+
+            .footer a {
+              margin: 0 8px;
+            }
+
+            .social-icons a {
+              font-size: 30px;
+            }
+          }
+
+          @media (max-width: 480px) {
+            .footer-content p {
+              font-size: 0.8rem;
+            }
+
+            .footer a {
+              display: block;
+              margin: 5px 0;
+            }
+
+            .socials {
+              flex-direction: column;
+            }
+
+            .social-icons a {
+              font-size: 25px;
+            }
+          }
+
+          .dev-name-span:hover {
+            text-shadow: 0 0 10px rgba(212,175,55,0.5);
+            letter-spacing: 2px;
+          }
+        `}
+      </style>
+
+      <div className="footer-content">
+        <p>&copy; 2024 Artisan Fusion. All Rights Reserved.</p>
+
+        <a 
+          href="https://marktyson.netlify.app/"
+          target="_blank" 
+          rel="noopener noreferrer"
+          style={styles.devLink}
+        >
+          Built by <span className="dev-name-span" style={styles.devName}>MARK TYSON</span>
+        </a>
+
+        <p>
+          <a href="/privacy-policy">Privacy Policy</a> |{" "}
+          <a href="/terms-of-service">Terms of Service</a>
+        </p>
+      </div>
+    </footer>
+  );
+}
+
+export default Footer;
           </a>
           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
             <i className="fab fa-twitter"></i>
